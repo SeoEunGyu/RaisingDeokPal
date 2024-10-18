@@ -1,0 +1,263 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Version>1.0.0.0</Version>
+    <AssemblyName>RasingDeokPal</AssemblyName>
+    <ApplicationIcon>asset\main_icon_s.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="resources\**" />
+    <EmbeddedResource Remove="resources\**" />
+    <None Remove="resources\**" />
+    <Page Remove="resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="asset\btn.png" />
+    <None Remove="asset\btn_arrow.png" />
+    <None Remove="asset\button\btn_arrow_left1.png" />
+    <None Remove="asset\button\btn_arrow_left2.png" />
+    <None Remove="asset\button\btn_arrow_right1.png" />
+    <None Remove="asset\button\btn_arrow_right2.png" />
+    <None Remove="asset\button\btn_breath1.png" />
+    <None Remove="asset\button\btn_breath2.png" />
+    <None Remove="asset\button\btn_change_acc.png" />
+    <None Remove="asset\button\btn_change_pot.png" />
+    <None Remove="asset\button\btn_change_soil.png" />
+    <None Remove="asset\button\btn_move1.png" />
+    <None Remove="asset\button\btn_move2.png" />
+    <None Remove="asset\button\btn_music1.png" />
+    <None Remove="asset\button\btn_music2.png" />
+    <None Remove="asset\button\btn_sunshine1.png" />
+    <None Remove="asset\button\btn_sunshine2.png" />
+    <None Remove="asset\button\btn_touch1.png" />
+    <None Remove="asset\button\btn_touch2.png" />
+    <None Remove="asset\button\btn_water1.png" />
+    <None Remove="asset\button\btn_water2.png" />
+    <None Remove="asset\button\nutirication.png" />
+    <None Remove="asset\cursor\icon_water.cur" />
+    <None Remove="asset\cursor\icon_water.png" />
+    <None Remove="asset\cursor\icon_water_16.cur" />
+    <None Remove="asset\cursor\icon_water_32.cur" />
+    <None Remove="asset\deokpal\deokchun_sheet.png" />
+    <None Remove="asset\deokpal\deokpal_default.png" />
+    <None Remove="asset\deokpal\deokpal_die.png" />
+    <None Remove="asset\deokpal\deokpal_form_1.png" />
+    <None Remove="asset\deokpal\deokpal_form_2.png" />
+    <None Remove="asset\deokpal\deokpal_form_3.png" />
+    <None Remove="asset\deokpal\deokpal_sheet.png" />
+    <None Remove="asset\deokpal\deokpal_thirsty.png" />
+    <None Remove="asset\deokpal\pot.png" />
+    <None Remove="asset\deokpal\shadow.png" />
+    <None Remove="asset\deokpal\soil.png" />
+    <None Remove="asset\dukpal_default.png" />
+    <None Remove="asset\effect\5384313.jpg" />
+    <None Remove="asset\effect\die_frame.png" />
+    <None Remove="asset\effect\effct_stardust.png" />
+    <None Remove="asset\effect\eighth_note.png" />
+    <None Remove="asset\effect\noPowerSun.png" />
+    <None Remove="asset\effect\nutrient_1.png" />
+    <None Remove="asset\effect\nutrient_2.png" />
+    <None Remove="asset\effect\nutrient_3.png" />
+    <None Remove="asset\effect\quarter_note.png" />
+    <None Remove="asset\effect\sixteenth_note.png" />
+    <None Remove="asset\effect\sprite_twinkle.jpg" />
+    <None Remove="asset\effect\sprite_twinkle.png" />
+    <None Remove="asset\effect\sprite_twinkle_white.png" />
+    <None Remove="asset\effect\sunshine.png" />
+    <None Remove="asset\effect\sunshine1.png" />
+    <None Remove="asset\effect\sunshineLeft.png" />
+    <None Remove="asset\effect\sunshineLeft1.png" />
+    <None Remove="asset\effect\sunshineLeft2.png" />
+    <None Remove="asset\effect\sunshineLeft3.png" />
+    <None Remove="asset\effect\sunshineLeft4.png" />
+    <None Remove="asset\effect\sunshinLeft.png" />
+    <None Remove="asset\font\DNFBitBitv2.otf" />
+    <None Remove="asset\font\DNFBitBitv2.ttf" />
+    <None Remove="asset\font\ONE Mobile POP.ttf" />
+    <None Remove="asset\font\던파 비트비트체 v2.ttf" />
+    <None Remove="asset\Icon\icon_deokpal.png" />
+    <None Remove="asset\Icon\icon_golden_deokpal.png" />
+    <None Remove="asset\Icon\icon_golden_pot.png" />
+    <None Remove="asset\Icon\icon_normal_pot.png" />
+    <None Remove="asset\Icon\icon_normal_soil.png" />
+    <None Remove="asset\Icon\icon_red_pot.png" />
+    <None Remove="asset\title.png" />
+    <None Remove="asset\ui\alert_item.png" />
+    <None Remove="asset\ui\alert_item_1.png" />
+    <None Remove="asset\ui\pickup.gif" />
+    <None Remove="asset\ui\pickup_1.png" />
+    <None Remove="asset\ui\pickup_2.png" />
+    <None Remove="asset\ui\pickup_3.png" />
+    <None Remove="asset\ui\pickup_4.png" />
+    <None Remove="asset\ui\pickup_base.png" />
+    <None Remove="asset\ui\ui_alert.png" />
+    <None Remove="asset\ui\ui_description_wood.png" />
+    <None Remove="asset\UI\ui_down_wood.png" />
+    <None Remove="asset\ui\ui_equip.png" />
+    <None Remove="asset\ui\ui_equip_wood.png" />
+    <None Remove="asset\ui\ui_left.png" />
+    <None Remove="asset\ui\ui_left_wood.png" />
+    <None Remove="asset\ui\ui_right.png" />
+    <None Remove="asset\ui\ui_right_wood.png" />
+    <None Remove="asset\ui\ui_slot.png" />
+    <None Remove="asset\ui\ui_slot_wood.png" />
+    <None Remove="asset\UI\ui_stardust.png" />
+    <None Remove="asset\video\pickup.avi" />
+    <None Remove="asset\video\pickup.mkv" />
+    <None Remove="asset\video\pickup_unique.avi" />
+    <None Remove="effect\GrayScaleEffect.ps" />
+    <None Remove="deokpal_default.png" />
+    <None Remove="dukpal_default.png" />
+    <None Remove="shadow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="asset\deokpal\deokchun_sheet.png" />
+    <Resource Include="asset\deokpal\deokpal_sheet.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="asset\main_icon_s.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="asset\button\btn_change_soil.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="asset\btn.png" />
+    <Resource Include="asset\btn_arrow.png" />
+    <Resource Include="asset\button\btn_arrow_left2.png" />
+    <Resource Include="asset\button\btn_arrow_right1.png" />
+    <Resource Include="asset\button\btn_arrow_right2.png" />
+    <Resource Include="asset\button\btn_breath1.png" />
+    <Resource Include="asset\button\btn_arrow_left1.png" />
+    <Resource Include="asset\button\btn_breath2.png" />
+    <Resource Include="asset\button\btn_change_acc.png" />
+    <Resource Include="asset\button\btn_change_pot.png" />
+    <Resource Include="asset\button\btn_move1.png" />
+    <Resource Include="asset\button\btn_move2.png" />
+    <Resource Include="asset\button\btn_music1.png" />
+    <Resource Include="asset\button\btn_music2.png" />
+    <Resource Include="asset\button\btn_sunshine1.png" />
+    <Resource Include="asset\button\btn_sunshine2.png" />
+    <Resource Include="asset\button\btn_touch1.png" />
+    <Resource Include="asset\button\btn_touch2.png" />
+    <Resource Include="asset\button\btn_water1.png" />
+    <Resource Include="asset\button\btn_water2.png" />
+    <Resource Include="asset\button\nutirication.png" />
+    <Resource Include="asset\cursor\icon_water.png" />
+    <Resource Include="asset\deokpal\deokpal_default.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="asset\deokpal\deokpal_die.png" />
+    <Resource Include="asset\deokpal\deokpal_form_1.png" />
+    <Resource Include="asset\deokpal\deokpal_form_2.png" />
+    <Resource Include="asset\deokpal\deokpal_form_3.png" />
+    <Resource Include="asset\deokpal\deokpal_thirsty.png" />
+    <Resource Include="asset\deokpal\pot.png" />
+    <Resource Include="asset\deokpal\shadow.png" />
+    <Resource Include="asset\deokpal\soil.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="asset\cursor\icon_water.cur" />
+    <Resource Include="asset\dukpal_default.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="asset\effect\5384313.jpg" />
+    <Resource Include="asset\effect\die_frame.png" />
+    <Resource Include="asset\effect\effct_stardust.png" />
+    <Resource Include="asset\effect\eighth_note.png" />
+    <Resource Include="asset\effect\noPowerSun.png" />
+    <Resource Include="asset\effect\nutrient_1.png" />
+    <Resource Include="asset\effect\nutrient_2.png" />
+    <Resource Include="asset\effect\nutrient_3.png" />
+    <Resource Include="asset\effect\quarter_note.png" />
+    <Resource Include="asset\effect\sixteenth_note.png" />
+    <Resource Include="asset\effect\sprite_twinkle.jpg" />
+    <Resource Include="asset\effect\sprite_twinkle.png" />
+    <Resource Include="asset\effect\sprite_twinkle_white.png" />
+    <Resource Include="asset\effect\sunshine.png" />
+    <Resource Include="asset\effect\sunshine1.png" />
+    <Resource Include="asset\effect\sunshineLeft.png" />
+    <Resource Include="asset\effect\sunshineLeft1.png" />
+    <Resource Include="asset\effect\sunshineLeft2.png" />
+    <Resource Include="asset\effect\sunshineLeft3.png" />
+    <Resource Include="asset\effect\sunshineLeft4.png" />
+    <Resource Include="asset\font\DNFBitBitv2.otf" />
+    <Resource Include="asset\font\DNFBitBitv2.ttf" />
+    <Resource Include="asset\font\ONE Mobile POP.ttf" />
+    <Resource Include="asset\Icon\icon_deokpal.png" />
+    <Resource Include="asset\Icon\icon_golden_deokpal.png" />
+    <Resource Include="asset\Icon\icon_golden_pot.png" />
+    <Resource Include="asset\Icon\icon_normal_pot.png" />
+    <Resource Include="asset\Icon\icon_normal_soil.png" />
+    <Resource Include="asset\Icon\icon_red_pot.png" />
+    <Resource Include="asset\title.png" />
+    <Resource Include="asset\ui\alert_item.png" />
+    <Resource Include="asset\ui\alert_item_1.png" />
+    <Resource Include="asset\ui\pickup.gif" />
+    <Resource Include="asset\ui\pickup_1.png" />
+    <Resource Include="asset\ui\pickup_2.png" />
+    <Resource Include="asset\ui\pickup_3.png" />
+    <Resource Include="asset\ui\pickup_4.png" />
+    <Resource Include="asset\ui\pickup_base.png" />
+    <Resource Include="asset\ui\ui_alert.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="asset\ui\ui_description_wood.png" />
+    <Resource Include="asset\UI\ui_down_wood.png" />
+    <Resource Include="asset\ui\ui_equip.png" />
+    <Resource Include="asset\ui\ui_equip_wood.png" />
+    <Resource Include="asset\ui\ui_left.png" />
+    <Resource Include="asset\ui\ui_left_wood.png" />
+    <Resource Include="asset\ui\ui_right.png" />
+    <Resource Include="asset\ui\ui_right_wood.png" />
+    <Resource Include="asset\ui\ui_slot.png" />
+    <Resource Include="asset\ui\ui_slot_wood.png" />
+    <Resource Include="asset\UI\ui_stardust.png" />
+    <Resource Include="effect\GrayScaleEffect.ps" />
+    <Resource Include="deokpal_default.png" />
+    <Resource Include="shadow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="asset\Sound\sound_8bit_select.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="asset\Sound\sound_coin_collection.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="asset\Sound\sound_select.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="asset\video\pickup_normal.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="asset\video\pickup_normal_1.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="asset\video\pickup_unique.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="asset\video\pickup_unique1.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="asset\video\pickup_unique_1.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
